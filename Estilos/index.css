@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+*{
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
+  margin: 0px;
+  display: grid;
+  grid-template-rows: 60px 1fr 60px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "cabecalho" "principal" "rodape";
+  background: linear-gradient(to right, #1A1D53, #13286F, #25C998);
+}
+
+.cabecalho{
+  grid-area: cabecalho;
+  display: flex;
+  border-radius: 0 0 20px 20px;
+  background-color: white;
+}
+
+.cabecalho > img {
+  margin-top: 0px;
+}
+
+.cabecalho > nav{
+  display: flex;
+  justify-content: end;
+  width: 90%;
+}
+
+.cabecalho > nav > ul{
+  display: flex;
+  list-style: none;
+}
+
+.cabecalho > nav > ul > li{
+  color: black;
+  font-weight: 300;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 1s;
+  margin: 20px 40px;
+}
+
+.cabecalho > nav > ul > li:hover{
+  color: aqua;
+  transition: 1s;
+  padding: 2px;
+}
+.cabecalho > nav > ul > li > a {
+  background-color: #13286F;
+  padding: 12px;
+  border-radius: 10px;
+  color: white;
+}
+.cabecalho > nav > ul > li > a:hover{
+  color: aqua;
+  transition: 1s;
+}
+.principal{
+  grid-area: principal;
+  height: calc(100px - 120px);
+
+}
+main > h1{
+  color: white;
+  font-weight: 700;
+  font-size: 3.5rem;
+  margin-top: 60px;
+  margin-left: 30px;
+  text-align: justify;
+}
+main > .conteudo > p {
+  color: white;
+  margin-left: 30px;
+  font-size: 1.0rem;
+  font-weight: 300;
+}
+.conteudo{
+  width: 40%;
+  float: left;
+
+}
+.conteudoImg{
+  float: right;
+  width: 40%;
+  position: relative;
+  top: -330px;
+}
+form {
+  margin-top: 60px;
+  padding: 20px;
+  margin-left: 10px;
+}
+input[type="email"] {
+  padding: 12px 100px 12px 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: 	#D3D3D3;
+}
+input[type="submit"] {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #D3D3D3;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover {
+background-color: black;
+color: white;
+transition: 1.2s;
+}
+p2{
+  color: white;
+  margin-left: 40px;
+  margin-top: 0px;
+  position: relative;
+  top: -15px;
+}
+p2 > a {
+  text-decoration: none;
+  color: white;
+
+}
+p2 > a:hover {
+  color: #4169E1;
+  transition: 1.1s;
+}
